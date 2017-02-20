@@ -5,7 +5,8 @@ const moment = require('moment')
 const chance = require('chance')()
 
 module.exports = class LineProtocolHelper {
-  static randomPoint(returnObject = false) {
+  static randomPoint(returnObject) {
+    returnObject = returnObject || false;
     return this.point({
       namespace: chance.string({length: 5, pool: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'}),
       value: chance.integer({min: 1, max: 30}),
@@ -14,7 +15,8 @@ module.exports = class LineProtocolHelper {
     }, returnObject)
   }
 
-  static point(options, returnObject = false) {
+  static point(options, returnObject) {
+    returnObject = returnObject || false;
     options = _.extend({
       namespace: 'test.statszee.key',
       value: 1,
