@@ -20,6 +20,7 @@
     "chai": "3.5.0",
     "cpu-stat": "2.0.1",
     "express": "4.14.1",
+    "lodash": "4.17.4",
     "mem-stat": "1.0.5",
     "moment": "2.17.1",
     "nunjucks": "3.0.0",
