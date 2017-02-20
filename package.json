@@ -15,6 +15,7 @@
     "trailsjs"
   ],
   "dependencies": {
+    "bluebird": "3.4.7",
     "body-parser": "1.16.1",
     "bower": "1.8.0",
     "chai": "3.5.0",
