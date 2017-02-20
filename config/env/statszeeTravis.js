@@ -19,9 +19,9 @@ module.exports = {
       database: {
         host: '127.0.0.1',
         port: '5435',
-        database: 'test',
-        username: process.env.PGUSER,
-        password: process.env.PGPASSWORD,
+        database: 'travis_ci_test',
+        username: "postgres",
+        password: "",
         dialect: 'postgresql',
         logging: false
       }
