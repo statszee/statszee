@@ -1,4 +1,4 @@
 'use strict'
 
 exports.statszeeTesting  = require('./statszeeTesting')
-exports.statszeeCodeship = require('./statszeeCodeship')
+exports.statszeeTravis = require('./statszeeCodeship')

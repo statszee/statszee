@@ -42,6 +42,7 @@
   },
   "scripts": {
     "test": "eslint --fix api/**/*.js config/**/*.js test/**/*.js && NODE_ENV=statszeeTesting mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --noxit --check-leaks --globals app --globals trail",
+    "travis": "eslint --fix api/**/*.js config/**/*.js test/**/*.js && NODE_ENV=statszeeTravis mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --noxit --check-leaks --globals app --globals trail",
     "eslint": "eslint --fix api/**/*.js config/**/*.js test/**/*.js",
     "mocha": "NODE_ENV=statszeeTesting mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --noxit --check-leaks --globals app --globals trail",
     "mocha-codeship": "NODE_ENV=statszeeCodeship mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --no-exit --check-leaks --globals app --globals trail",
