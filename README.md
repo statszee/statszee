@@ -44,5 +44,5 @@ Add into your application entry point
 [ci-url]: https://travis-ci.org/lobetia/statszee
 [daviddm-image]: http://img.shields.io/david/lobetia/statszee.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/lobetia/statszee
-[codeclimate-image]: https://img.shields.io/codeclimate/github/lobetia/statszee.svg?style=flat-square
-[codeclimate-url]: https://codeclimate.com/github/lobetia/statszee
+[codeclimate-image]: https://img.shields.io/codeclimate/github/LobeTia/statszee.svg?style=flat-square
+[codeclimate-url]: https://codeclimate.com/github/LobeTia/statszee
