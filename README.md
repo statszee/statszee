@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="300" src="https://rawgithub.com/LobeTia/statszee/master/public/images/logo.svg?raw=true" />
+</p>
+
 # StatsZee
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![Build status][ci-image]][ci-url]
