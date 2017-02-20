@@ -1,13 +1,8 @@
 # StatsZee
 ## Self-hosted stats server based Node.JS and Sequelize made with [trails.js](http://trailjs.io) framework
 
-### Quick F.A.Q.
-
-#### Another stats server?
-I know, Librato and Stathat (and many others services) are good but I think that they lacks of 
-
-#### Why selfhosted?
-No need to pay for additional services, extensible, opensource
+## WARNING: Not suitable for production
+### Work in progress, things are going to change
 
 ### Installation
 
@@ -20,7 +15,7 @@ Add into your application entry point
     const statsZee         = require("statszee");
     const statsZeeInstance = new statsZee({
       web:{
-        port: process.env.PORT || 4545
+        port: process.env.PORT || 3000
       },
       database:{
         stores: {
