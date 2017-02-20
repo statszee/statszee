@@ -40,8 +40,8 @@ Add into your application entry point
 
 [snyk-image]: https://snyk.io/test/github/lobetia/statszee/badge.svg
 [snyk-url]: https://snyk.io/test/github/lobetia/statszee/
-[ci-image]: https://travis-ci.org/lobetia/statszee.svg?branch=master
-[ci-url]: https://travis-ci.org/lobetia/statszee
+[ci-image]: https://travis-ci.org/LobeTia/statszee.svg?branch=master
+[ci-url]: https://travis-ci.org/LobeTia/statszee
 [daviddm-image]: http://img.shields.io/david/lobetia/statszee.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/lobetia/statszee
 [codeclimate-image]: https://img.shields.io/codeclimate/github/LobeTia/statszee.svg?style=flat-square
