@@ -18,7 +18,7 @@ module.exports = {
     stores: {
       database: {
         host: '127.0.0.1',
-        port: '5435',
+        port: '5432',
         database: 'travis_ci_test',
         username: "postgres",
         password: "",
