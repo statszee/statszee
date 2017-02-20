@@ -1,6 +1,8 @@
 # StatsZee
 ## Self-hosted stats server based Node.JS and Sequelize made with [trails.js](http://trailjs.io) framework
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LobeTia/statszee.svg)](https://greenkeeper.io/)
+
 ## WARNING: Not suitable for production
 ### Work in progress, things are going to change
 
