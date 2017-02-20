@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card shadow-1">
+      <div class="card-header"></div>
+      <div class="card-block">
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Precision</th>
+            <th>Retention</th>
+            <th>First Data</th>
+            <th>Actions</th>
+          </tr>
+          <tr ng-repeat="metric in metrics">
+            <td>{{metric.namespace}}</td>
+            <td>{{metric.precision}}</td>
+            <td>3mo</td>
+            <td>{{metric.firstData|date:'medium'}}</td>
+            <td>
+              <div class="btn btn-sm btn-primary">Show</div>
+              <div class="btn btn-sm btn-danger">Delete</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-footer"></div>
+    </div>
+  </div>
+</div>

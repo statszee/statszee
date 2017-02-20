@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="statsServer" ng-controller="mainController">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Statszee - {{ui.pageTitle}} - {{ui.pageSubtitle}}</title>
+  <link href="//brick.a.ssl.fastly.net/Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <base href="/" target="_self">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/Ionicons/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <!--SVG favicon attempt-->
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-statszee">
+  <div class="container">
+
+    <!--{#Mobile Menu#}-->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--{#Brand#}-->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo-white.svg" width="60" height="50" class="d-inline-block align-middle" alt="">
+      <h1 class="d-inline-block brand-title">Statszee</h1>
+    </a>
+
+    <!--{#Menu Links#}-->
+    <div class="collapse navbar-collapse text-md-right navbar-right navbar-topleft" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Configuration</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="wrapper">
+  <div id="content">
+    <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 page-title">
+            <h1>{{ ui.pageTitle }}</h1>
+            <h2>{{ ui.pageSubtitle }}</h2>
+          </div>
+          <div class="col-sm-4">
+            <input class="form-control search-box shadow-1" type="text" value="" id="example-text-input"
+                   ng-model="searchInput" ng-model-options="{ allowInvalid: true, debounce: 200 }"
+                   placeholder="Search for metrics & pages">
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+
+      <ul class="nav flex-column sidebar">
+        <li class="nav-item">
+          <a class="nav-link" href="/"><span class="ion ion-android-home"></span> Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pageMenu" data-toggle="collapse">
+            <span class="ion ion-android-document"></span> Pages&nbsp;
+          </a>
+          <ul class="collapse nav flex-column" id="pageMenu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Add new&nbsp;
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/metrics">
+            <span class="ion ion-android-list"></span> Metrics
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="ion ion-android-funnel"></span> Retention Policies&nbsp;
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="ion ion-android-open"></span> Screens&nbsp;
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="ion ion-android-warning"></span> Alerts&nbsp;
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="ion ion-android-options"></span> Settings&nbsp;
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="col-sm-10">
+      <div id="contentPage">
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 offset-2 text-center footer">
+      Made with <span class="ion ion-heart" style="color: #F44336;"></span> by <a href="https://github.com/LobeTia" target="_blank">LobeTia</a>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/tether/dist/js/tether.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/highcharts/highcharts.js"></script>
+
+<!--AngularJS & Dep-->
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-route/angular-route.js"></script>
+<script src="vendor/lodash/dist/lodash.js"></script>
+<script src="vendor/restangular/dist/restangular.js"></script>
+<script src="vendor/highcharts-ng/dist/highcharts-ng.js"></script>
+
+<!--NgApp files-->
+<script src="statszee/ngApp/core.js"></script>
+<script src="statszee/ngApp/controllers/mainController.js"></script>
+<script src="statszee/ngApp/controllers/searchController.js"></script>
+<script src="statszee/ngApp/controllers/dashboardController.js"></script>
+<script src="statszee/ngApp/controllers/metricsController.js"></script>
+<script src="statszee/ngApp/factories/DashboardUI.js"></script>
+<script src="statszee/ngApp/directives/cardGrid.js"></script>
+<script src="statszee/ngApp/directives/graphCard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div class="div panel-grid">
+  <div class="row" ng-repeat="row in grid track by $index">
+    <div class="col-sm-{{12/colNumber}}" ng-repeat="col in grid[$index]">
+      <graph-card metric="col"></graph-card>
+    </div>
+  </div>
+</div>

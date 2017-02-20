@@ -1,0 +1,33 @@
+<div class="card shadow-1 graph-card">
+  <div class="card-header">
+
+    <div class="row">
+      <div class="col-sm-9">
+        <h1>{{metric.namespace}}</h1>
+      </div>
+      <div class="col-sm-3 text-right">
+        <h4>{{metric.precision}}</h4>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-block">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <highchart id="{{metric.namespace}}-chart" config="chartConfig"
+                   style="height: 240px; margin: 0 auto"></highchart>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-footer"></div>
+</div>
+
+<style>
+  highchart {
+    width: 100%;
+    display: block;
+  }
+
+</style>

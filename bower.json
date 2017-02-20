@@ -1,0 +1,27 @@
+{
+  "name": "stats-server",
+  "description": "A new Trails.js Application",
+  "main": "index.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "trails",
+    "trailsjs"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "Ionicons": "ionicons#^2.0.1",
+    "restangular": "1.6.1",
+    "highcharts-ng": "1.0.0",
+    "highcharts": "5.0.7",
+    "angular": "1.6.1",
+    "angular-route": "1.6.1",
+    "lodash": "4.17.4"
+  },
+  "scripts": {
+    "postinstall": "bower cache clean && bower install"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "statszee",
+  "version": "0.3.0",
+  "description": "Statszee Stats-Server Core",
+  "homepage": "http://subluminar.com",
+  "author": {
+    "name": "Mattia Lobertini <lobetia@gmail.com>",
+    "email": "lobetia@gmail.com",
+    "url": "http://subluminar.com"
+  },
+  "main": "index.js",
+  "keywords": [
+    "",
+    "trails",
+    "trailsjs"
+  ],
+  "dependencies": {
+    "body-parser": "1.16.0",
+    "bower": "1.8.0",
+    "chai": "3.5.0",
+    "cpu-stat": "2.0.1",
+    "express": "4.14.1",
+    "mem-stat": "1.0.5",
+    "moment": "2.17.1",
+    "nunjucks": "3.0.0",
+    "pg": "6.1.2",
+    "smokesignals": "2.1.0",
+    "snyk": "1.24.6",
+    "trailpack-cache": "2.0.0",
+    "trailpack-express": "2.0.2",
+    "trailpack-router": "2.1.0",
+    "trailpack-sequelize": "2.0.0",
+    "trails": "2.0.0",
+    "winston": "2.2"
+  },
+  "devDependencies": {
+    "chance": "1.0.4",
+    "eslint": "3.14.1",
+    "eslint-config-trails": "latest",
+    "mocha": "3.2.0",
+    "supertest": "3.0.0"
+  },
+  "scripts": {
+    "test": "eslint --fix api/**/*.js config/**/*.js test/**/*.js && NODE_ENV=statszeeTesting mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --noxit --check-leaks --globals app --globals trail",
+    "eslint": "eslint --fix api/**/*.js config/**/*.js test/**/*.js",
+    "mocha": "NODE_ENV=statszeeTesting mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --noxit --check-leaks --globals app --globals trail",
+    "mocha-codeship": "NODE_ENV=statszeeCodeship mocha ./test/index.js ./test/**/*.test.js --reporter spec --recursive --full-trace --no-exit --check-leaks --globals app --globals trail",
+    "postinstall": "node node_modules/bower/bin/bower install"
+  },
+  "engines": {
+    "node": "7.1.0",
+    "npm": "3.10.9"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "https://github.com/LobeTia/statszee.git",
+  "license": "MIT"
+}
