@@ -15,7 +15,7 @@
     "trailsjs"
   ],
   "dependencies": {
-    "body-parser": "1.16.0",
+    "body-parser": "1.16.1",
     "bower": "1.8.0",
     "chai": "3.5.0",
     "cpu-stat": "2.0.1",
@@ -25,17 +25,17 @@
     "nunjucks": "3.0.0",
     "pg": "6.1.2",
     "smokesignals": "2.1.0",
-    "snyk": "1.24.6",
+    "snyk": "1.25.0",
     "trailpack-cache": "2.0.0",
-    "trailpack-express": "2.0.2",
+    "trailpack-express": "2.0.3",
     "trailpack-router": "2.1.0",
     "trailpack-sequelize": "2.0.0",
     "trails": "2.0.0",
-    "winston": "2.2"
+    "winston": "~2.3.1"
   },
   "devDependencies": {
     "chance": "1.0.4",
-    "eslint": "3.14.1",
+    "eslint": "3.16.0",
     "eslint-config-trails": "latest",
     "mocha": "3.2.0",
     "supertest": "3.0.0"
