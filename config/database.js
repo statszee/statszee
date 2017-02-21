@@ -20,6 +20,6 @@ module.exports = {
 
   models: {
     defaultStore: 'database',
-    migrate: 'none'
+    migrate: 'alter'
   }
 }

@@ -1,16 +1,24 @@
 sudo: true
 language: node_js
 os:
-  - linux
+- linux
 node_js:
 - 4
 - 5
 - 6
 - 7
 services:
-  - postgresql
+- postgresql
 addons:
-  postgresql: "9.5"
+  postgresql: '9.5'
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+- psql -c 'create database travis_ci_test;' -U postgres
 script: npm run travis
+deploy:
+  provider: npm
+  email: lobetia@gmail.com
+  api_key:
+    secure: ldBrRRpNQ4fb+Za83YqfXwf00F2b+G8/czM8pOkyWsu/cdPluAuFa2no4vV1HnRCOoFelaugFS61L4Z94l2jou68DX+Hc7IWzONLKE5U0ESQDCQ1L9kKCUdkmi2VnE86iKQUfamb0SYOTfb/EccQfNmC3Ss5BpS7tW86jWEFKyoDGx0pU5MmogG/0Kzo3ZxdxdV75HUzAUWzIR9S2WAGBWAp6DoztRGLGsLvqHxdoiFf4oRNyFIO6mR/dhrZxsRJf6EzIgsZtRfMD1ctsNPD8x2WRrFKLsbvPk0h4P2RM+aVVhxb7eIpP/dVA+0Oo80ISmxgzSb9IZ0+NdJ3RO4v9S+o8Ba2nrm3s1Kl/4wXBB9iZLOc9jy3fC69a+PfcUhw58qcE5hkrcM+efXXwkG6DomnFZY0ly0+nalI3blfUEzefWygc84QsfQSSv/dtF7hTlMCnH/uY1NpJf0AqvPJ1xESHJqVmN/xpcVYP+u1uFTQ60izrGPjsnFasac3Pq9yZQ8PdVmY7b+H9l4sQJuWwT7YgtLHsW59pu9UDnSEPspRce8lk+5xaqHHGlwUzYgqpmOanIIzk9VMcqKjJAQD/DS0kIsZjPyowB1pxRTrzAZXqJej9QevfuBhOxB22eZEK/Vq7yv+968LRS74KnwDNgBwlNAoSSk0IWdTTRKdQ7g=
+  on:
+    tags: true
+    repo: LobeTia/statszee
