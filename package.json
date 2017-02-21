@@ -26,7 +26,6 @@
     "moment": "2.17.1",
     "nunjucks": "3.0.0",
     "pg": "6.1.2",
-    "pg-native": "1.10.0",
     "smokesignals": "2.1.0",
     "snyk": "1.25.0",
     "trailpack-cache": "2.0.0",
